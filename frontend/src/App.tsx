@@ -5,11 +5,13 @@ import Signup from "./pages/Signup"
 import PrivateRoute from "./routeGuard/PrivateRoute"
 import Home from "./pages/Home"
 import PageNotFound from "./pages/PageNotFound"
+import { Toaster } from 'react-hot-toast';
 import PlaylistDetail from "./pages/PlaylistDetail"
 
 const App = () => {
   return (
     <>
+      <Toaster />
       <Routes>
 
         <Route element={<PublicRoute />}>
